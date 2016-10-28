@@ -1,0 +1,89 @@
+.deliciousPage{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1;
+}
+.deliciousFixed{
+    position: fixed;
+    width:100%;
+    z-index:1;
+}
+.selectOrder{
+    width:100%;
+    height:0.6rem;
+    background: #fff;
+    padding-top:0.1px;
+    border-bottom: 1px solid #eee;
+}
+.deliShopList{
+    position: absolute;
+    left:0;
+    top:1.4rem;
+    height: 9.96rem;
+    overflow-y: auto;
+}
+.innerSelect{
+    width:100%;
+    height:60%;
+    margin:0.12rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+.innerSelect span{
+    color:#aaa;
+    font-size: 0.1rem;
+}
+.innerSelect p{
+    width:33.33%;
+    text-align: center;
+    border-right:1px solid #eee;
+}
+.innerSelect p:last-child{
+    border:none;
+}
+/*美食选择页面*/
+.meishiPage{
+    width:100%;
+    height:7rem;
+    background: #fff;
+    position: relative;
+    display: none;
+}
+.meishiCover{
+    width:100%;
+    height:2.96rem;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    left:0;
+    bottom:-2.96rem;
+}
+.meishiLeft{
+    width:50%;
+    height:100%;
+    background: #eee;
+    position: absolute;
+    left:0;top:0;
+}
+.meishiRight{
+    width:50%;
+    height:100%;
+    position: absolute;
+    left:50%;top:0;
+}
+.meishiPage li{
+    width:100%;
+    height:1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.outerFood{
+    background: #fff;
+}
+.meishiRight li{
+    border-bottom:1px solid #ccc;
+    width:90%;
+    margin-left:10%;
+}

@@ -1,0 +1,94 @@
+<div id="qiang_box">
+	<!--头部-->
+	<div class="qiang_header">
+		<div class="qiang_inner_header">
+			<p class="iconfonts" ng-click="qiangBack()">&#xe611;</p>
+			<p>限时抢购</p>
+			<p></p>
+		</div>
+	</div>
+	<!--bg图片-->
+	<div class="qiang_bg">
+		<img src="imgs/qiang_bg.jpg"/>
+	</div>
+    <!--nav-->
+    <div id="qiang_nav">
+        <ul>
+            <li><p>10:00<p>已结束</p></li>
+            <li class="qiang_active"><p>13:00</p><p>抢购进行中</p></li>
+            <li><p>16:00</p><p>即将开抢</p></li>
+            <li><p>20:00</p><p>即将开抢</p></li>
+        </ul>
+    </div>
+	<!--main-->
+	<div id="qiang_main">
+		<div id="qiang_tab1" class="qiang_tab">
+			<ul >
+				<li ng-repeat="x in over_data">
+                    <div class="qiang_tab_list">
+                        <img ng-src="{{x.food_img}}"/>
+                        <span class="qiang_zhe">{{x.zhe}}折</span><span class="qiang_zhe2"></span>
+                        <div class="information">
+                            <p><span class="iconfont">&#xe649;</span>{{x.name}}</p>
+                            <p><span class="iconfont">&#xe70b;</span>{{x.food_name}}</p>
+                            <div class="qiang_sold"><span>已抢{{x.sold}}份</span>剩{{x.remain}}份</div>
+                            <div class="qiang_price">￥<span>{{x.new_price}}</span><span>{{x.old_price}}</span></div>
+                            <div class="qiang_btn over_btn">{{x.btn}}</div>
+                        </div>
+                    </div>
+				</li>
+			</ul>
+		</div>
+        <div id="qiang_tab2" class="qiang_tab" style="display: block;">
+            <ul >
+                <li ng-repeat="x in now_data">
+                    <div class="qiang_tab_list">
+                        <img ng-src="{{x.food_img}}"/>
+                        <span class="qiang_zhe">{{x.zhe}}折</span><span class="qiang_zhe2"></span>
+                        <div class="information">
+                            <p><span class="iconfont">&#xe649;</span>{{x.name}}</p>
+                            <p><span class="iconfont">&#xe70b;</span>{{x.food_name}}</p>
+                            <div class="qiang_sell"><span>已抢{{x.sold}}份</span>剩{{x.remain}}份</div>
+                            <div class="qiang_price">￥<span>{{x.new_price}}</span><span>{{x.old_price}}</span></div>
+                            <div class="qiang_btn now_btn">{{x.btn}}</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="qiang_tab3" class="qiang_tab">
+            <ul >
+                <li ng-repeat="y in later_data">
+                    <div class="qiang_tab_list">
+                        <img ng-src="{{y.food_img}}"/>
+                        <span class="qiang_zhe">{{y.zhe}}折</span><span class="qiang_zhe2"></span>
+                        <div class="information">
+                            <p><span class="iconfont">&#xe649;</span>{{y.name}}</p>
+                            <p><span class="iconfont">&#xe70b;</span>{{y.food_name}}</p>
+                            <div class="qiang_sell"><span>限量{{y.limit}}份</span></div>
+                            <div class="qiang_price">￥<span>{{y.new_price}}</span><span>{{y.old_price}}</span></div>
+                            <div class="qiang_btn later_btn">{{y.btn}}</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="qiang_tab4" class="qiang_tab">
+            <ul >
+                <li ng-repeat="y in later_data">
+                    <div class="qiang_tab_list">
+                        <img ng-src="{{y.food_img}}"/>
+                        <span class="qiang_zhe">{{y.zhe}}折</span><span class="qiang_zhe2"></span>
+                        <div class="information">
+                            <p><span class="iconfont">&#xe649;</span>{{y.name}}</p>
+                            <p><span class="iconfont">&#xe70b;</span>{{y.food_name}}</p>
+                            <div class="qiang_sell"><span>限量{{y.limit}}份</span></div>
+                            <div class="qiang_price">￥<span>{{y.new_price}}</span><span>{{y.old_price}}</span></div>
+                            <div class="qiang_btn later_btn">{{y.btn}}</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,199 @@
+<div class="mineWrap">
+    <!--顶部bar-->
+    <div class="mineHeader">
+        <div class="innerHeader">
+            <p class="iconfonts">&#xe601;</p>
+            <p>我的</p>
+            <p class="iconfonts" ng-click="toSettings()">&#xe600;</p>
+        </div>
+    </div>
+    <!-- 设置 -->
+    <div class="mineSettings">
+        <div class="mineHeader">
+            <div class="innerHeader">
+                <p class="iconfonts" ng-click="backToPage()">&#xe611;</p>
+                <p>设置</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="goodsArea settingArea">
+            <ul>
+                <li class="settingAreaLi">
+                    <p ng-click="clearCache()">清除图片缓存<span class="picCache">1.06MB</span></p>
+                </li>
+                <li class="settingAreaLi">
+                    <p>非WIFI下图片质量<span>普通</span></p>
+                </li>
+            </ul>
+        </div>
+        <div class="swingPhone">
+            <p>摇一摇，截屏反馈问题</p>
+            <input type="checkbox" class="checkSwitch">
+        </div>
+        <div class="aboutEle">
+            <p>关于饿了么</p>
+            <span class="iconfonts">&#xe610;</span>
+        </div>
+        <div class="quitLogin">
+            <p ng-click="quitButton()">退出登录</p>
+        </div>
+    </div>
+    <!--个人信息-->
+    <div class="loginHeader" ng-click="myAccount()">
+        <div class="headDiv">
+            <img src="imgs/mine/head.jpg" alt="头像">
+            <p class="nickName">昵称</p>
+            <p class="userPhone">
+                <span class="iconfonts">&#xe60f;</span>
+                <span>1888888888</span>
+            </p>
+        </div>
+        <span class="iconfonts iconfont-right">&#xe610;</span>
+    </div>
+    <!-- 账户信息 -->
+    <div class="account">
+        <div class="accountTop">
+            <div class="innerAccount">
+                <p class="iconfonts" ng-click="accountReturn()">&#xe611;</p>
+                <p>账户信息</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="myInfor">
+            <ul>
+                <li class="headLi">
+                    <p>头像</p>
+                    <img src="imgs/mine/head.jpg" alt="头像" />
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <p>用户名</p>
+                    <p>昵称</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+            </ul>
+        </div>
+        <p class="mindInfor">账号绑定</p>
+        <div class="countBind goodsArea">
+            <ul>
+                <li>
+                    <span style="color:#55a0de" class="iconfonts">&#xe60f;</span>
+                    <p>手机</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <span style="color:#3aca51" class="iconfonts">&#xe60d;</span>
+                    <p>微信</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <span style="color:#fa2a20" class="iconfonts">&#xe613;</span>
+                    <p>QQ</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <span style="color:#e11425" class="iconfonts">&#xe60e;</span>
+                    <p>微博</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <span style="color:#ff4902" class="iconfonts">&#xe612;</span>
+                    <p>淘宝</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+            </ul>
+        </div>
+        <p class="mindInfor">安全设置</p>
+        <div class="safeSetting">
+            <ul>
+                <li>
+                    <p>登录密码</p>
+                    <p>修改</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <p>支付密码</p>
+                    <p>未设置</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+                <li>
+                    <p>小额免密支付</p>
+                    <span class="iconfonts">&#xe610;</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--余额-->
+    <div class="myWallet">
+        <div class="leftMoney">
+            <span class="quitMoney">0.00</span>
+            <span>元</span>
+            <p>余额</p>
+        </div>
+        <div class="discount">
+            <span class="quitMoney">5</span>
+            <span>个</span>
+            <p>优惠</p>
+        </div>
+        <div class="score">
+            <span class="quitMoney">888</span>
+            <span>分</span>
+            <p>积分</p>
+        </div>
+    </div>
+    <!--中间收货地址-->
+    <div class="goodsArea">
+        <ul>
+            <li>
+                <span style="color:#55a0de" class="iconfonts">&#xe60b;</span>
+                <p>收货地址</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+            <li>
+                <span style="color:#ff706a" class="iconfonts">&#xe603;</span>
+                <p>我的收藏</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+            <li>
+                <span style="color:#55a0de" class="iconfonts">&#xe60a;</span>
+                <p>美食相册</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+        </ul>
+    </div>
+    <!--积分商城  -->
+    <div class="scoreShop">
+        <ul>
+            <li>
+                <span style="color:#98d553" class="iconfonts">&#xe607;</span>
+                <p>积分商城</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+            <li>
+                <span style="color:#ffc91f" class="iconfonts">&#xe606;</span>
+                <p>饿了么会员卡</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+        </ul>
+    </div>
+    <!--服务中心  -->
+    <div class="goodsArea">
+        <ul>
+            <li>
+                <span style="color:#55a0de" class="iconfont">&#xe608;</span>
+                <p>服务中心</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+            <li>
+                <span style="color:#55a0de" class="iconfonts">&#xe604;</span>
+                <p>欢迎评分</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+            <li>
+                <span style="color:#55a0de" class="iconfonts">&#xe605;</span>
+                <p>加盟合作</p>
+                <span class="iconfonts">&#xe610;</span>
+            </li>
+        </ul>
+    </div>
+</div>

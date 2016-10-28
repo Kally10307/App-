@@ -1,0 +1,348 @@
+.mineWrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mineWrap p {
+    font-size: 0.25rem;
+}
+
+
+/*头部*/
+
+.mineHeader, .accountTop {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: #2f8fe6;
+    color: #fff;
+}
+
+.innerHeader, .innerAccount {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerHeader p, .innerAccount p {
+    font-size: 0.3rem;
+}
+
+
+/*登录后*/
+
+.loginHeader {
+    width: 100%;
+    height: 1.5rem;
+    background: #2f8fe6;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: -0.02rem;
+}
+
+.headDiv {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.headDiv img {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+
+.headDiv .nickName {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    font-size: 0.35rem;
+}
+
+.headDiv .userPhone {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-size: 0.2rem;
+}
+
+.loginHeader .iconfont-right {
+    line-height: 1.5rem;
+}
+
+
+/*余额*/
+
+.myWallet {
+    width: 100%;
+    height: 1.3rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.16rem;
+}
+
+.myWallet div {
+    width: 33.333%;
+    border-right: 1px solid #eee;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+
+.myWallet div:last-child {
+    border: none;
+}
+
+.leftMoney span {
+    color: #f59200;
+}
+
+.leftMoney span:first-child, .discount span:first-child, .score span:first-child {
+    font-weight: bold;
+    font-size: 0.4rem;
+}
+
+.discount span {
+    color: red;
+}
+
+.score span {
+    color: green;
+}
+
+
+/*中间收货地址*/
+
+.goodsArea, .scoreShop, .safeSetting {
+    width: 100%;
+    height: 2rem;
+    background: #fff;
+    margin: 0.2rem auto;
+    position: relative;
+    font-size: 0.3rem;
+}
+
+.goodsArea li, .scoreShop li, .safeSetting li {
+    width: 95%;
+    margin: 0 auto;
+    height: 0.67rem;
+    line-height: 0.67rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goodsArea li span, .scoreShop li span {
+    width: 10%;
+}
+
+.goodsArea li span:last-child, .scoreShop li span:last-child {
+    margin-right: -0.2rem;
+    color: #ccc;
+}
+
+.goodsArea p, .scoreShop p {
+    width: 80%;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*积分商城*/
+
+.scoreShop {
+    height: 1.3rem;
+}
+
+/*账户信息*/
+.account,.mineSettings {
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+}
+.myInfor {
+    width: 100%;
+    height: 1.8rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.myInfor img {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.myInfor li {
+    width: 95%;
+    margin: 0.2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myInfor p:first-child {
+    width: 80%;
+}
+
+.myInfor .headLi {
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.myInfor span, .safeSetting span {
+    color: #ccc;
+}
+
+.countBind {
+    height: 3.35rem;
+    margin: 0 auto 0.2rem;
+}
+
+.safeSetting li p:first-child {
+    width: 80%;
+}
+
+.safeSetting {
+    margin: 0 auto;
+}
+
+.mindInfor {
+    text-indent: 1em;
+}
+
+.safeSetting li p:first-child {
+    border-bottom: 1px solid #eee;
+}
+
+
+/*设置*/
+
+.mineSettings p{
+    font-size: 0.16rem;
+}
+
+.settingArea {
+    height: 1.3rem;
+}
+.settingArea ul li.settingAreaLi{
+    width: 6.24rem;
+    margin-left: 0.16rem;
+}
+.settingArea ul li.settingAreaLi span{
+    margin-right: 0.16rem;
+    color:#888;
+}
+.settingArea p {
+    width: 100%;
+}
+
+.settingArea span {
+    float: right;
+    /*text-align: center;*/
+    text-align: right;
+    text-indent: -2em;
+}
+
+.swingPhone {
+    width: 100%;
+    height: 0.67rem;
+    line-height: 0.67rem;
+    /*text-indent: 1em;*/
+    padding: 0 0.16rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.swingPhone p{
+    width:80%;
+}
+
+/*按钮*/
+.checkSwitch {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 52px;
+    height: 32px;
+    border: 1px solid #DFDFDF;
+    outline: 0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: #DFDFDF;
+    -webkit-transition: background-color 0.1s, border 0.1s;
+    transition: background-color 0.1s, border 0.1s;
+    margin:auto 0;
+}
+
+.checkSwitch:before {
+    width: 50px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: #fdfdfd;
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1), -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+}
+
+.checkSwitch:after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35), -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+}
+.checkSwitch:checked{
+    border-color: #04BE02;
+    background-color: #04BE02;
+}
+.checkSwitch:checked:before{
+    transform: scale(0);
+}
+.checkSwitch:checked:after{
+    transform: translateX(20px);
+}
+/*按钮结束*/
+.aboutEle,.quitLogin{
+    width:100%;
+    height:0.67rem;
+    padding: 0 0.16rem;
+    line-height: 0.67rem;
+    background: #fff;
+}
+.aboutEle{
+    margin:0.2rem 0 0.5rem 0;
+    /*text-indent: 1em;*/
+    display: flex;
+    justify-content: space-between;
+}
+.aboutEle span{
+    /*text-indent: -2em;*/
+    color:#ccc;
+}
+.quitLogin{
+    text-align: center;
+    color:red;
+}

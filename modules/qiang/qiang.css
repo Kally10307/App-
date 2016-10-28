@@ -1,0 +1,321 @@
+@font-face {font-family: 'iconfont';
+	src: url('../../fonts/qiangFonts/iconfont.eot'); /* IE9*/
+	src: url('../../fonts/qiangFonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../../fonts/qiangFonts/iconfont.woff') format('woff'), /* chrome、firefox */
+	url('../../fonts/qiangFonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../../fonts/qiangFonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;}
+
+#qiang_box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow-y: auto;
+}
+/*header==========*/
+.qiang_header{
+	width: 100%;
+	height: 0.80rem;
+	background: #2F8FE6;
+	color: #fff;
+	line-height:0.80rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.qiang_inner_header{
+	width: 90%;
+	height: 0.80rem;
+	line-height: 0.80rem;
+    margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.qiang_inner_header p{
+	font-size: 0.30rem;
+}
+
+/*.qiang_lj_header_div p{*/
+	/*height: 1rem;*/
+	/*line-height: 1rem;*/
+	/*float: left;*/
+	/*font-size: 0.16rem;*/
+	/*color: white;*/
+/*}*/
+/*.qiang_lj_header_div p:nth-of-type(2){*/
+	/*margin-left: 0.5rem;*/
+/*}*/
+/*bg==========*/
+.qiang_bg{
+	width: 100%;
+	height: 2.32rem;
+	margin-top: 0.78rem;
+}
+.qiang_bg img{
+	width: 100%;
+	height: 100%;
+}
+
+/* nav========*/
+#qiang_nav{
+	width: 100%;
+	height: 0.88rem;
+}
+.qiang_nav_fixed{
+	position: fixed;
+	top:0.8rem;
+	left: 0;
+	z-index: 10;
+}
+#qiang_nav ul li{
+	float: left;
+	width: 25%;
+	height: 0.88rem;
+	border-left:1px solid #4E4E4E ;
+    background-color: #3A3A3A;
+    padding: 0.06rem 0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+
+}
+#qiang_nav ul li.qiang_active{
+	border: none;
+	background: #FED700;
+}
+#qiang_nav ul li.qiang_active p{
+	color: #B81510;
+}
+/*.qiang_nav ul li.qiang_active p:nth-of-type(2){*/
+    /*font-weight: bold;*/
+/*}*/
+#qiang_nav ul li p{
+	text-align: center;
+	/*color: #9F9F9F;*/
+    color: #9A9A9A;
+}
+/*main==========*/
+
+#qiang_main{
+    width: 100%;
+    /*height: 7.36rem;*/
+    /*overflow: auto;*/
+}
+.qiang_tab{
+    width:100%;
+    height: auto;
+    background-color: #fff;
+	display: none;
+}
+/*.qiang_tab ul{*/
+	/*width: 100%;*/
+	/*height: 100%;	*/
+	/*background: white;*/
+/*}*/
+.qiang_tab ul li{
+    width: 100%;
+    height: 2.42rem;
+	padding: 0.24rem 0 0 0.16rem;
+}
+.qiang_tab ul li .qiang_tab_list{
+	width: 100%;
+	height: 100%;
+	padding-right: 0.24rem;
+	padding-bottom: 0.24rem;
+	border-bottom: 0.01rem solid #f0f0f0;
+	position: relative;
+}
+.qiang_tab ul li .qiang_tab_list img{
+    width:1.56rem;
+	height: 1.56rem;
+	margin-top: 0.03rem;
+	float: left;
+}
+.qiang_tab ul li .qiang_tab_list .qiang_zhe{
+    position: absolute;
+    top: 0;
+    left: 0.32rem;
+    width: 0.60rem;
+    height: 0.48rem;
+	line-height: 0.52rem;
+	text-align: center;
+    background-color: #e72f47;
+    color: #fff;
+    font-size: 0.12rem;
+}
+.qiang_tab ul li .qiang_tab_list .qiang_zhe2{
+	position: absolute;
+	top: 0.46rem;
+	left: 0.32rem;
+	width: 0;
+	height: 0;
+	border-left: 0.30rem solid transparent;
+	border-right: 0.30rem solid transparent;
+	border-top: 0.12rem solid #e72f47;
+	font-size: 0;
+	line-height: 0;
+}
+.qiang_tab .information{
+	float: left;
+	width: 4.4rem;
+	height: 100%;
+	padding-left: 0.18rem;
+	position: relative;
+
+}
+.qiang_tab .information p:nth-of-type(1){
+	width: 100%;
+	height: 0.34rem;
+	line-height: 0.34rem;
+	font-size: 0.16rem;
+	color: #a8a8a8;
+	margin-bottom: 0.08rem;
+}
+.qiang_tab .information p:nth-of-type(1) span{
+	margin-right: 0.12rem;
+	font-size: 0.16rem;
+}
+.qiang_tab .information p:nth-of-type(2){
+	width: 100%;
+	height: 0.4rem;
+	line-height:0.4rem;
+	margin-bottom: 0.16rem;
+	font-size: 0.3rem;
+	color: #444444;
+}
+.qiang_tab .information p:nth-of-type(2) span{
+	margin-right: 0.12rem;
+	color: #ea2e47;
+	font-size: 0.3rem;
+}
+.qiang_tab .information .qiang_sell, .qiang_tab .information .qiang_sold{
+	width: 100%;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	margin-bottom: 0.12rem;
+	color: #d0d0d0;
+}
+.qiang_tab .information .qiang_sold span:nth-of-type(1){
+	text-align: center;
+	color: #d0d0d0;
+	border: 1px solid #d0d0d0;
+	border-radius: 0.04rem;
+	margin-right: 0.08rem;
+}
+.qiang_tab .information .qiang_sell span:nth-of-type(1){
+	text-align: center;
+	color: #f6494b;
+	border: 1px solid #f6494b;
+	border-radius: 0.04rem;
+	margin-right: 0.08rem;
+}
+.qiang_tab .information .qiang_price{
+	height: 0.506rem;
+	font-size:0.16rem;
+	line-height:0.6rem;
+	color: #f5484a;
+	position: relative;
+}
+.qiang_tab .information .qiang_price span:nth-of-type(1){
+	display: inline-block;
+	font-size:0.36rem;
+	line-height: 0.506rem;
+	font-weight:bold;
+}
+.qiang_tab .information .qiang_price span:nth-of-type(2){
+	position: absolute;
+	top: 0;
+	left: 1rem;
+	color: #9c9c9c;
+	text-decoration:line-through;
+}
+.qiang_tab .information .qiang_btn{
+	width: 1.32rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	border-radius: 0.04rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.qiang_tab .information .over_btn{
+	background-color: #fff;
+	color: #e33147;
+	border: 1px solid #e33147;
+}
+.qiang_tab .information .now_btn{
+	background-color: #e33147;
+	color: #fff;
+}
+.qiang_tab .information .later_btn{
+	background-color: #a1a1a1;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

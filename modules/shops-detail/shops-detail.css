@@ -1,0 +1,382 @@
+html,body{
+    height:100%;
+}
+
+#shops-detail {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 1;
+    background-color: #eee;
+    overflow: auto;  /* add */
+}
+.detail-back-head{
+    width: 100%;
+    height: 0.80rem;
+    line-height:0.80rem;
+    background: #B33B4A;
+    z-index: 5;
+}
+ .detail-back{
+    width: 100%;
+    height: 0.80rem;
+    /*padding: 0.20rem 0.20rem 0.10rem;*/
+    color: white;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+ .inner-detail{
+     width: 90%;
+     height: 0.80rem;
+     line-height: 0.80rem;
+     margin: 0 auto;
+     display: flex;
+     justify-content:space-between;
+ }
+.detail-back h3, .detail-back p{
+    font-size: 0.3rem;
+}
+.detail-back h3{
+    font-weight: normal;
+}
+/*.detail-back h3{*/
+    /*position: absolute;*/
+    /*top: 0.2rem;*/
+    /*left: 1.44rem;*/
+    /*width: 3.36rem;*/
+    /*height: 0.5rem;*/
+    /*text-align: center;*/
+    /*font-size:0.28rem;*/
+    /*line-height:0.5rem;*/
+    /*font-weight: normal;*/
+/*}*/
+.detail-back2{
+    background-color: #2F8FE6;
+}
+/*.detail-back span{*/
+    /*display: inline-block;*/
+    /*height: 0.5rem;*/
+    /*line-height: 0.5rem;*/
+    /*!*color: white;*!*/
+/*}*/
+
+#detail-header {
+    padding: 0.10rem  0.20rem 0.20rem;
+    margin-top: -0.05rem;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 1.76rem;
+    background: #B33B4A;
+}
+ #detail-header figure {
+    width: 100%;
+    height: 1.14rem;
+}
+#detail-header figure img {
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-right: 0.25rem;
+}
+ #detail-header figure figcaption {
+    float: left;
+}
+#detail-header figure figcaption h3 {
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#detail-header figure figcaption p:nth-child(2) {
+    font-size: 0.12rem;
+}
+#detail-header figure figcaption p:last-child {
+    font-size: 0.12rem;
+}
+#detail-header figure figcaption p:last-child span {
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.22rem;
+    background: url(../../imgs/shopdetail/jian.jpg) no-repeat center center;
+    background-size: 0.22rem;
+}
+#detail-header #ad {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: rgba(152, 54, 65, 0.6);
+    font-size: 0.12rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.2rem;
+}
+#detail-header #ad p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#detail-header #ad span {
+    background: #EBD7D9;
+    color: #666;
+}
+
+/*#detail-tab */
+
+.detail-tab{
+    width: 100%;
+    height: 0.75rem;
+    background-color: #eee;
+    z-index: 5;
+}
+.detail-tab2 {
+    position: fixed;
+    top: 0.80rem;
+    left: 0;
+}
+#detail-nav{
+    height: 0.74rem;
+    border-bottom: 1px solid #ccc;
+    /*position: fixed;*/
+    /*top: 0.8rem;*/
+    /*left: 0;*/
+}
+#detail-nav li {
+    float: left;
+    width: 50%;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    text-align: center;
+}
+
+#detail-nav li:first-child a{
+    color:#3190E8;
+    border-bottom: 1px solid #3190E8;
+}
+#detail-nav li a:hover{
+    color:#3190E8;
+    border-bottom: 1px solid #3190E8;
+}
+#detail-nav li a:visited, #detail-nav li a:active{
+    color: #666;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/*#detail-content */
+
+#detail-content {
+    overflow: hidden;
+    font-size:0.26rem;
+    position: relative;
+}
+
+#content-left {
+    overflow-y: auto;
+    font-size: 0.22rem;
+    float: left;
+    width: 1.45rem;
+    height: 8.8rem;
+}
+.fixed{
+    position: fixed;
+    top: 1.55rem;
+    left: 0;
+}
+#sidebar{
+    overflow: hidden;
+    width: 1.45rem;
+    height: 12.66rem;
+    position: absolute;
+}
+#sidebar ul li {
+    border-bottom: 1px solid #eee;
+    background: #F8F8F8;
+    padding:0.3rem 0.13rem;
+    text-align: center;
+}
+#sidebar ul li a:hover, #sidebar ul li a:active, #sidebar ul li a:visited{
+text-decoration: none;
+}
+/*#content-left ul li:first-child {*/
+/*border-left: 0.04rem solid #3190E8;*/
+/*background: white;*/
+/*}*/
+#sidebar ul li.detail-active{
+    border-left: 0.04rem solid #3190E8;
+    background: white;
+}
+
+#content-right {
+     /*float: left;*/
+    float: right;
+    width: 4.95rem;
+    margin-bottom: 0.9rem;
+}
+#content-right dl dt{
+    font-weight:bold;
+    color: #727272;
+    padding: 0.12rem 0.17rem;
+    height: 0.53rem;
+    background: #F1f1f1;
+}
+#content-right dl dd{
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 2.6rem;
+    padding:0.26rem 0.17rem;
+    border-bottom: 0.01rem solid #eee;
+}
+#content-right dl dd img{
+    width: 0.88rem;
+    height:0.88rem;
+    float: left;
+}
+#content-right dl dd section{
+    padding: 0.1rem;
+    width: 3.64rem;
+    float: left;
+}
+#content-right dl dd section h3{
+    font-size: 0.26rem;
+}
+#content-right dl dd section p:nth-child(2){
+    text-indent: 0.1rem;
+    font-size: 0.08rem;
+    color: #ccc;
+}
+#content-right dl dd section p:last-child span{
+    float: left;
+    font-size:0.36rem;
+    color: #FF8636;
+}
+#content-right dl dd section p:last-child button{
+    float: right;
+    width: 0.55rem;
+    height: 0.55rem;
+    color: white;
+    border-radius: 50%;
+    background: #3190E8;
+    border:none;
+    font-size:0.4rem;
+    font-weight:bold;
+}
+#detail-pay{
+    position: fixed;
+    left:0;
+    bottom:0;
+    height: 0.84rem;
+    z-index: 3;  /* add */
+}
+#detail-pay .che{
+    position: relative;
+    display: inline-block;
+    width: 1.3rem;
+    height:1.3rem;
+    margin-top: -0.3rem;
+    background: url('../../imgs/shopdetail/che.png') no-repeat center center;
+    -webkit-background-size: cover;
+             background-size: cover;
+}
+#detail-pay .shopcar{
+    width: 1.3rem;
+    height:1.3rem;
+    background: url('../../imgs/shopdetail/gouwuche.png') rgba(255,255,255,.8) no-repeat center center;
+    -webkit-background-size: 0.8rem;
+             background-size: 0.8rem;
+    border-radius: 50%;
+}
+#detail-pay p:first-child{
+    float: left;
+    width: 4.56rem;
+    height:0.84rem;
+    background: rgba(0,0,0,0.9);
+    padding-left:1.34rem;
+}
+#detail-pay p:first-child span:last-child{
+    position: absolute;
+    width: 1.3rem;
+    height:1.3rem;
+    font-size:0.4rem;
+    color: white;
+}
+#detail-pay button{
+    font-size: 0.30rem;
+    height:0.84rem;
+    border: 0;
+    float: left;
+    width: 1.84rem;
+    background: #55DB6C;
+    font-weight:bold;
+    color: white;
+}
+#detail-info{
+    display: none;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 10;
+}
+#detail-info section{
+    background: white;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+    padding: 0.3rem;
+    height:4.72rem;
+}
+#detail-info h3{
+    font-size: 0.30rem;
+    border-bottom: 1px solid #F1f1f1;
+}
+#detail-info ul{
+    margin-left: 0.2rem;
+}
+#detail-info ul li {
+    padding: 0.1rem 0;
+    font-size: 0.26rem;
+    border-bottom: 1px solid #F1f1f1;
+}
+/*.blank{*/
+    /*width: 100%;*/
+    /*background: white;*/
+    /*height:0.90rem;*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+/*}*/
+#detail-pay p:first-child  #num{
+    border-radius: 50%;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: #FD7354;
+    color: white;
+    text-align: center;
+    line-height: 0.3rem;
+    position: absolute;
+    right:0.1rem;
+    top:0.1rem;
+    font-size:0.2rem;
+}
+/*jquery插件所要用的样式*/
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}

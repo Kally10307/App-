@@ -1,0 +1,226 @@
+*{
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0; 
+}
+#find{
+    background: #FFFFFF;
+    
+}
+
+/*头部*/
+
+.header{
+	width: 100%;
+	height: 0.80rem;
+	line-height: 0.80rem;
+	background-color: #2f8fe6;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.header p{
+	font-size: 0.3rem;
+	font-weight: normal;
+}
+
+/*推荐*/
+
+.recommend{
+	width: 100%;
+	margin-top: 0.80rem;
+}
+.recommend div{
+	background: #ffffff;
+	float: left;
+	height: 1.49333333rem;
+	width: 50%;
+	border-bottom: 1px solid #ededed;
+}
+.h_first{
+	border-right: 1px solid #ededed;
+}
+.recommend span{
+	
+	margin-top: 0.4693333rem;
+	color: #ff9700;
+	display: block;
+	font-size: 0.256rem;
+}
+#sp{
+	color: #a2cf26;
+}
+
+.recommend p{
+	
+	font-size: 0.170666666rem;
+	line-height: 0.3rem;
+}
+
+.h_first div{
+	float: left;
+	
+	margin-left: 0.27306666rem;
+
+}
+.h_second div{
+	float: left;
+	
+	margin-left: 0.27306666rem;
+}
+.recommend img{
+	height: 0.6826666rem;
+	margin:0.4010666rem 0.27306666rem 0 0;
+	float: right;
+}
+
+
+#find .blank{
+	clear: both;
+	width: 100%;
+	height: 0.1877333rem;
+	background: #f4f4f4;
+	
+}
+
+/*banner*/
+
+.banner{
+	
+	
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+
+/*猜你喜欢*/
+
+.like{
+	
+	height: 1.390933rem;
+	width: 100%;
+	background: #ffffff;
+	padding-top: 0.3925333rem;
+}
+.like p{
+	
+	text-align: center;
+	font-size: 0.2986666rem;
+	color: #333333;
+	font-weight: normal;
+}
+.like span{
+	margin-top: 0.085333rem;
+	font-size: 0.2218666rem;
+	display: block;
+	text-align: center;
+}
+.like img{
+	padding: 0 0.1024rem;
+	height: 0.2816rem;
+}
+
+#find .meal{
+	width: 5.888rem;
+	margin-left: 0.256rem;
+	
+}
+#find .meal_img{
+	display: block;
+	float: left;
+}
+#find .meal_img img{
+	width: 1.877333rem;
+	display: block;
+	margin-right: 0.085333rem;
+}
+
+#find .desOne{
+	margin-top: 0.257rem;
+	font-size: 0.1962666rem;
+	color: #6e6e6e;
+}
+#find .desTwo{
+	margin-top: 0.257rem;
+	font-size: 0.1962666rem;
+	color: #ff6203;
+}
+#find .more{
+	clear: both;
+	height: 0.896rem;
+}
+#find .more p{
+	height: 0.896rem;
+	line-height: 0.896rem;
+	font-size: 0.256rem;
+	text-align: center;
+	color: #cccccc;
+}
+#find .fruit{
+	width: 5.888rem;
+	height: auto;
+	margin-left: 0.256rem;
+	
+}
+#find .fruit_img{
+	display: block;
+	float: left;
+	/*width: 33.33%;*/
+	width: 1.9rem;
+	margin-right: 0.06rem;
+}
+#find .fruit_img img{
+	width: 100%;
+	height: 1.9rem;
+	display: block;
+	
+}
+#find .tea{
+	margin-top: 0.257rem;
+	font-size: 0.1962666rem;
+	color: #6e6e6e;
+	width: 1.9626rem;
+	height: 0.76rem;
+	overflow: hidden;
+}
+#find .tea_price{
+	margin-top: 0.257rem;
+	font-size: 0.1962666rem;
+	color: #ff6203;
+}
+
+#find .lastOne{
+	border-bottom: 1px solid #eeeeee;
+	border-top: 1px solid #eeeeee;
+	height: 0.7424rem;
+	padding: 0 0.16rem;
+}
+#find .lastOne img{
+	padding: 0 0.1024rem;
+	height: 0.2816rem;
+}
+#find .lastOne .first_p{
+	font-size: 0.315733rem;
+	color: #000000;
+	float: left;
+	height: 0.7424rem;
+	line-height: 0.7424rem;
+}
+#find .lastOne .sec_p{
+	font-size: 0.305733rem;
+	color: #999999;
+	float: right;
+	height: 0.7424rem;
+	line-height: 0.7424rem;
+}
+
+
+
+
+.find_footer{
+	/*height: 2rem;*/
+	height: 1rem;
+}

@@ -1,0 +1,96 @@
+
+
+<div id="find" >
+
+<!-- 头部 -->
+
+    <div class="header">
+    	<p>发现</p>
+    </div>
+
+	<!-- 推荐 -->
+	<div class="recommend">
+		<div class="h_first">
+			<div>
+				<span>积分商城</span>
+				<p>0元好物在这里</p>
+			</div>
+			<img src="imgs/IMG_0234_03.gif"/>
+		</div>
+		<div class="h_second">
+			<div>
+				<span id="sp">游戏中心</span>
+				<p>等餐之余来玩玩</p>
+			</div>
+			<img src="imgs/IMG_0234_05.gif"/>
+		</div>
+	</div>
+
+	 <!--空白div--> 
+    <div class="blank"></div>
+    
+    <!-- banner -->
+
+    <div class="banner">
+    	<img src="imgs/IMG_0234_09.gif"/>
+    </div>
+
+    <!-- 空白div -->
+    <div class="blank"></div>
+
+    <!-- 猜你喜欢 -->
+
+	<div class="like">
+		<p>— <img src="imgs/IMG_0234_12.gif"/>猜你喜欢 —</p>
+		<span>你的口味,我都懂得</span>
+	</div>
+	
+	<div class="meal">
+		<div class="meal_img" ng-repeat="x in data">
+			<img ng-src="{{x.food_img}}" />
+			<p class="desOne">{{x.food_name}}</p>
+			<p class="desTwo">{{x.food_price}}</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class="more">
+		<p>查看更多></p>
+	</div>
+		
+		<!-- 空白div -->
+    <div class="blank"></div>
+	
+	<div class="like">
+		<p>— <img src="imgs/IMG_0234_26.jpg"/>天天特价 —</p>
+		<span>特价商品,一网打尽</span>
+	</div>
+	
+	<div class="fruit">
+		<div class="fruit_img" ng-repeat="y in reData">
+			<img ng-src="{{y.food_img}}" />
+			<p class="tea"> 
+				{{y.cheap_name}}
+			</p>
+			<p class="tea_price">
+				{{y.cheap_price}}
+			</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class="more">
+		<p>查看更多></p>
+	</div>
+		
+		
+		<!-- 空白div -->
+    <div class="blank"></div>
+    
+    <div class="lastOne">
+			<p class="first_p"><img src="imgs/IMG_0235_13.gif"/>限时好礼</p>
+			<p class="sec_p">更多好礼></p>
+		</div>
+		<!--footer-->
+		<div class="find_footer"></div>
+</div>

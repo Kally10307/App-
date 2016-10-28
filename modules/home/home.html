@@ -1,0 +1,204 @@
+<header>
+	<div class="addr">北京市昌平区<span><img src="imgs/bottom.png" alt="" id="bottomImg"/></span></div>
+	<div class='select' ng-click='show_search()'><span><img src="imgs/header_search.png" id="header_search"/></span>营养早餐</div>
+</header>
+<div class="clearfix"></div>
+<!--轮播图-->
+<div class="loopWrap swiper-container">
+	<div class="loop swiper-wrapper">
+		<div class="swiper-slide"><img src="imgs/l1.jpg" alt="" /></div>
+		<div class="swiper-slide"><img src="imgs/l2.jpg" alt="" /></div>
+		<div class="swiper-slide"><img src="imgs/l3.jpg" alt="" /></div>
+		<div class="swiper-slide"><img src="imgs/l4.jpg" alt="" /></div>
+		<div class="swiper-slide"><img src="imgs/l5.jpg" alt="" /></div>
+	</div>
+</div>
+<div class="header_bg"></div>
+<div class="clearfix"></div>
+<!--广告-->
+<div class="right_advertise" ng-click='show_ad()'>广告</div>
+
+
+<div class="dMain">
+	<div class="main_div">
+		<img src="imgs/gg.jpg" alt="advertise"/>
+	</div>
+	<div class="wrap">
+		<ul id="list">
+			<li>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/2.png" alt="" />
+						<span class='description'>品质早餐</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/13.png" alt="" />
+						<span class='description'>汉堡</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/6.png" alt="" />
+						<span class='description'>美食</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/7.png" alt="" />
+						<span class='description'>简餐</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/2.png" alt="" />
+						<span class='description'>米粉面馆</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/13.png" alt="" />
+						<span class='description'>甜品饮品</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/6.png" alt="" />
+						<span class='description'>准时达</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/7.png" alt="" />
+						<span class='description'>商店超市</span>
+					</div>
+				</a>
+					
+			</li>
+			<li>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/8.png" alt="" />
+						<span class='description'>米粉面馆</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/9.png" alt="" />
+						<span class='description'>甜品饮品</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/11.png" alt="" />
+						<span class='description'>准时达</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/12.png" alt="" />
+						<span class='description'>商店超市</span>
+					</div>
+				</a>
+
+
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/8.png" alt="" />
+						<span class='description'>品质早餐</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/9.png" alt="" />
+						<span class='description'>品质早餐</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/11.png" alt="" />
+						<span class='description'>品质早餐</span>
+					</div>
+				</a>
+				<a href="#/delicious">
+					<div class="img">
+						<img src="imgs/12.png" alt="" />
+						<span class='description'>品质早餐</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="active">
+		<div id="active_left" ng-click="jumpToQiang()">
+			<p>9.27元抢午餐</p>
+			<p>距离结束</p>
+			<p>
+				<span id="sp1">02</span> : <span id="sp2">54</span> : <span id="sp3">35</span>
+			</p>
+			<img src="imgs/active1.jpg" alt="chicken" />
+		</div>
+		<div id="active_right">
+			<div class="goodView" ng-click="jumpToGood()">
+				<div class="qizhe">
+					<p>七折好评餐</p>
+					<p>品质甄选</p>
+				</div>
+				<div class="beef_img">
+					<img src="imgs/4.png" alt="" />
+				</div>
+			</div>
+			<div class="good_bottom">
+				<div class="fastFood">
+					<p class="bottom_p1">营养快餐</p>
+					<p class="bottom_p2">15元吃饱</p>
+					<img src="imgs/active4.jpg" alt="" class="good_bottom_img1"/>
+				</div>
+				<div class="meishi">
+					<p class="bottom_p1">美食热卖</p>
+					<p class="bottom_p2">懂你的口味</p>
+					<img src="imgs/rm.jpg" alt="" class="good_bottom_img2"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<!-------------附近商家  获取数据--------------------->
+<div id="nearby"><span></span>附近商家</div>
+<div class="list_div" ng-controller='HomeController'>
+	<ul class="list_ul">
+		<li ng-repeat="x in data" ng-click = 'jumpToDetail()'>
+			<div class="list_top">
+				<div class="list_div_left">
+					<img ng-src="{{x.imgUrl}}" alt="" />
+				</div>
+				<div class="list_div_right">
+					<p>
+						<span class="pinpai">品牌</span>
+						<span class="mingcheng">{{x.name}}</span>
+						<span>票</span>
+					</p>
+					<p>
+						<span><img src="imgs/xing.jpg" alt="" class="xing"/></span>&nbsp;&nbsp;
+						<span class="score">{{x.grade}}</span>&nbsp;&nbsp;
+						月售<span class="sale_order">{{x.recent_order_num}}</span>单
+					</p>
+					<p>
+						￥<span class="lowest_price">{{x.miniPrice_send}}</span>起送 <span class="skew_line">/</span> <span class="sendFee">{{x.description}}</span>
+						<span class="distance">{{x.distance}}</span>km&nbsp;<span class="skew_line">/</span><span class="sendTime">{{x.order_lead_time}}</span>
+					</p>
+				</div>
+			</div>
+			<p class="rightP">
+				<span class="jian">减</span>&nbsp;&nbsp;
+				<span class="pzj">{{x.tips}}</span>
+			</p>
+		</li>
+	</ul>
+</div>
+
+
+

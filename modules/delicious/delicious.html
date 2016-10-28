@@ -1,0 +1,77 @@
+<div class="deliciousPage">
+    <div class="deliciousFixed">
+        <!--顶部bar-->
+        <div class="mineHeader">
+            <div class="innerHeader">
+                <p class="iconfonts" ng-click="backHome()">&#xe611;</p>
+                <p>美食</p>
+                <p class="iconfonts">&#xe602;</p>
+            </div>
+        </div>
+        <!-- 选择菜单 -->
+        <div class="selectOrder">
+            <div class="innerSelect">
+                <p ng-click="meiShiSelect()">美食<span class="iconfonts sanjiao">&#xe60c;</span></p>
+                <p>排序<span class="iconfonts">&#xe60c;</span></p>
+                <p>筛选<span class="iconfonts">&#xe60c;</span></p>
+            </div>
+        </div>
+        <div class="meishiPage">
+            <div class="meishiLeft">
+                <ul>
+                    <li>美食</li>
+                    <li>快餐便当</li>
+                    <li>特色菜系</li>
+                    <li class="outerFood">异国料理</li>
+                    <li>小吃夜宵</li>
+                </ul>
+            </div>
+            <div class="meishiRight">
+                <ul>
+                    <li>全部异国料理</li>
+                    <li>日韩料理</li>
+                    <li>披萨意面</li>
+                    <li>西餐</li>
+                    <li>东南亚菜</li>
+                </ul>
+            </div>
+            <div class="meishiCover"></div>
+        </div>
+    </div>
+    <!-- 店铺列表 -->
+    <div class="list_div deliShopList">
+    	<ul class="list_ul">
+    		<li ng-repeat="x in data" ng-click = 'jumpToDetail()'>
+    			<div class="list_top">
+    				<div class="list_div_left">
+    					<img ng-src="{{x.imgUrl}}" alt="" />
+    				</div>
+    				<div class="list_div_right">
+    					<p>
+    						<span class="pinpai">品牌</span>
+    						<span class="mingcheng">{{x.name}}</span>
+    						<span>票</span>
+    					</p>
+    					<p>
+    						<span><img src="imgs/xing.jpg" alt="" class="xing"/></span>&nbsp;&nbsp;
+    						<span class="score">{{x.grade}}</span>&nbsp;&nbsp;
+    						月售<span class="sale_order">{{x.recent_order_num}}</span>单
+    					</p>
+    					<p>
+    						￥<span class="lowest_price">{{x.miniPrice_send}}</span>起送 <span class="skew_line">/</span> <span class="sendFee">{{x.description}}</span>
+    						<span class="distance">{{x.distance}}</span>km&nbsp;<span class="skew_line">/</span><span class="sendTime">{{x.order_lead_time}}</span>
+    					</p>
+    				</div>
+    			</div>
+    			<p class="rightP">
+    				<span class="jian">减</span>&nbsp;&nbsp;
+    				<span class="pzj">{{x.tips}}</span>
+    			</p>
+    		</li>
+    	</ul>
+    </div>
+
+
+
+
+</div>

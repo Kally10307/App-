@@ -1,0 +1,26 @@
+#ad {
+  position: absolute;
+  width: 100%;
+  background: #a61117;
+  z-index: 3;
+}
+#ad #ad-header {
+  width: 100%;
+}
+#ad #ad-header img {
+  width: 100%;
+  height: 3.85rem;
+}
+#ad #ad-content {
+  margin: 0.2rem;
+}
+#ad #ad-content img {
+  width: 100%;
+}
+#ad #ad-footer {
+  margin: 0.2rem auto;
+  width: 6.08rem;
+}
+#ad #ad-footer img {
+  width: 100%;
+}

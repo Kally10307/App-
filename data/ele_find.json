@@ -1,0 +1,80 @@
+{
+	"ele_food":[
+		{
+			"food_name":"沙拉靠谱套餐",
+			"food_price":"￥25",
+			"food_img":"imgs/IMG_0234_16.gif"
+		},
+		{
+			"food_name":"锅包肉",
+			"food_price":"￥38",
+			"food_img":"imgs/IMG_0234_18.gif"
+		},
+		{
+			"food_name":"黄焖鸡米饭大份",
+			"food_price":"￥24",
+			"food_img":"imgs/IMG_0234_20.gif"
+		}
+	],
+
+
+	"ele_cheap":[
+		{
+			"cheap_name":"【0.9元秒杀】维他橙汁",
+			"cheap_price":"￥0.9",
+			"cost_price":"￥4.9",
+			"food_img":"imgs/IMG_0235_03.gif"
+		},
+		{
+			"cheap_name":"维他菊花茶250ml",
+			"cheap_price":"￥0.9",
+			"cost_price":"￥4.9",
+			"food_img":"imgs/IMG_0235_05.gif"
+		},
+		{
+			"cheap_name":"【养颜佳品】厄尔多瓜香蕉",
+			"cheap_price":"￥0.9",
+			"cost_price":"￥4.9",
+			"food_img":"imgs/IMG_0235_07.gif"
+		}
+	],
+
+	"ele_prize":[
+		{
+			"prize_title":"iphone6s 土豪金 16G",
+			"prize_des":"[0元兑奖]时尚之选",
+			"prize_point":"199",
+			"prize_int":"积分",
+			"prize_rof":"抽奖",
+			"food_img":"imgs/IMG_0236_03.gif"
+
+		},
+		{
+			"prize_title":"Apple iPad mini4",
+			"prize_des":"奖品价值2888元",
+			"prize_point":"299",
+			"prize_int":"积分",
+			"prize_rof":"抽奖",
+			"food_img":"imgs/IMG_0236_06.gif"
+
+		},
+		{
+			"prize_title":"美的(Midea)面包机",
+			"prize_des":"全自动 家用和面机触摸屏",
+			"prize_point":"99",
+			"prize_int":"积分",
+			"prize_rof":"抽奖",
+			"food_img":"imgs/IMG_0236_11.gif"
+
+		},
+		{
+			"prize_title":"Kindle电子书阅读器",
+			"prize_des":"护眼健康 超长续航",
+			"prize_point":"99",
+			"prize_int":"积分",
+			"prize_rof":"抽奖",
+			"food_img":"imgs/IMG_0236_14.gif"
+
+		}
+	]
+}

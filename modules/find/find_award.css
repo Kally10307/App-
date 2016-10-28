@@ -1,0 +1,148 @@
+.gift{
+	background:white;
+	height: 100%;
+	width: 100%;
+}
+.read img{
+	width: 100%;
+	/*border: 1px solid red;*/
+}
+
+/*tab切换*/
+
+.tab{
+	height: 0.6826666rem;
+	width: 3.6693333rem;
+	
+	margin-left: 0.17066666rem;
+}
+.tab span{
+	display: block;
+	float: left;
+	width: 50%;
+	font-size: 0.2304rem;
+	height: 0.6826666rem;
+	line-height: 0.68266666rem;
+	/*border-bottom: 2px solid #3199e8;*/
+	text-align: center;
+}
+
+.container{
+	position: relative;
+}
+
+.content{
+  /*display:none;*/
+}
+.content.active{
+  display:none;
+}
+
+.desc{
+	
+	border-top: 1px solid #dedede;
+	color: #a5a5a5;
+	font-size: 0.2048rem;
+	margin: 0 0.17066666rem;
+	 
+}
+.text1{
+	margin-bottom: 0.12725rem;
+}
+.text3{
+	margin-top: 0.12725rem;
+}
+.desc span{
+	font-weight: bold;
+}
+
+/*抽奖规则*/
+
+.rule{
+	
+	color: #a5a5a5;
+	font-size: 0.2048rem;
+	margin: 0 0.17066666rem;
+	clear: both;
+}
+
+.check{
+	margin: 0 auto;
+	color: #0089dc;
+	background: #FFFFFF;
+	font-size: 0.19626666rem;
+	border: 1px solid #dedede;
+	height: 0.7168rem;
+	width: 3.413333rem;
+	margin-top: 0.2389333rem;
+	clear: both;
+}
+
+.imp{
+	position: relative;
+	margin: 0.682666rem  auto 0;
+	height: 1.706666rem;
+	width: 5.973333rem;
+	border: 1px dashed #dedede;
+	padding-top: 0.3rem ;
+}
+.warn{
+	width: 1.5872rem;
+	background:white;
+	height: 0.28393333rem;
+	position: absolute;
+	top: -0.175rem;
+	left: 2.17rem;
+	z-index: 9;
+}
+.warn span{
+	display: inline-block;
+	text-align: center;
+	height: 0.28393333rem;
+	line-height: 0.28393333rem;
+	font-size: 0.28393333rem;
+	background: white;
+	clear: both;
+}
+.imp p{
+	line-height: 0.257rem;
+	height: 0.257rem;
+	color: #a5a5a5;
+}
+
+.shengming{
+	margin-top: 0.7168rem;
+	color: #dddddd;
+	text-align: center;
+	margin-bottom: 0.2816rem;
+}
+.find_loading{
+	position: fixed;
+	bottom: 0;
+	z-index: 99999;
+	
+	height: 1.0752rem;
+	width: 100%;
+	border-top: 1px solid #dcdcdc;
+	background: white;
+}
+.find_loading div{
+	height: 0.64rem;
+	background: #ff8901;
+	margin: 0.18376rem auto 0;
+	vertical-align: middle;
+	width: 5.973333rem;
+	
+}
+.find_loading p{
+	font-size: 0.256rem;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+.foot{
+	height: 1.0752rem;
+}
